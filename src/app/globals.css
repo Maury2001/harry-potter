@@ -8,6 +8,12 @@
   width: 100vw;
 }
 
+.harry-img{
+  background-image: url('../../public/images/harry.jpg');
+  height: 100vh;
+  width: 100vw;
+}
+
 .mobile-img{
   background-image: url('../../public/images/hogwarts.jpg');
   height: 100vh;

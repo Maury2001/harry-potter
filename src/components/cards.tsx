@@ -112,7 +112,7 @@ const Card = () => {
           // onClick={() => setIsOpen(!isOpen)}
           key={character.id}
           onClick={() => toggleCard(index)}
-          whileHover={{ scale: 1.1 }}
+          whileHover={{ scale: 0.9 }}
           initial={{scale:0.8}}
           whileInView={{scale:1}}
           layout

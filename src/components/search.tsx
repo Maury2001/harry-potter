@@ -54,14 +54,14 @@ const Search = ({ search }: { search?: string },{getSearchResult}:any) => {
 
 
   return (
-    <div className='relative rounded-md shadow-sm'>
+    <div className='relative rounded-md shadow-sm flex justify-end'>
       <form onSubmit={handleSubmit} >
 
       <input
         value={text}
         placeholder='Seek and you shall find...'
         onChange={e => setText(e.target.value)}
-        className='m-10 block w-full sm:w-fit items-center rounded-full border-0 py-1.5 pl-10 sm:pl-3 sm:m-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6 bg-transparent'
+        className='m-10 sm:w-fit items-center rounded-full border-0 py-1.5 pl-10 sm:pl-3 sm:m-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6 bg-transparent'
       />
 
       </form>

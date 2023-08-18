@@ -12,7 +12,7 @@ const jim = Jim_Nightshade({
 const NotFound = () => {
   return (
     <section
-      className={`w-full h-screen items-center bg-fixed bg-center bg-cover harry-img ${jim.className}`}
+      className={`w-full h-screen items-center bg-fixed bg-center bg-cover harry-img sm:mobile-img ${jim.className}`}
     >
       <div className=" flex items-center justify-center h-full w-full">
         <NavBar/>
@@ -24,12 +24,16 @@ const NotFound = () => {
             rotate: [0, 0, 270, 270, 0],
           }}
           initial={{ opacity: 0 }}
-          transition={{ duration: 2 }}
+          transition={{ duration: 1 }}
           whileHover={{ scale: 1.2 }}
           whileInView={{ scale: 1.1 }}
-          className=" grid grid-cols-1 col-span-1 w-1/3 place-content-center py-10 px-5 rounded-lg text-center border border-gray-800 hover:backdrop-blur"
+          className=" grid grid-cols-1 col-span-1 w-1/3 place-content-center sm:backdrop-blur py-10 px-5 rounded-lg text-center border border-gray-800 hover:backdrop-blur"
         >
-          <motion.h1 className=" text-center flex flex-row gap-3 m-5 my-4">
+          <motion.h1
+          initial={{opacity:0}}
+          animate={{opacity:1}}
+          transition={{duration:4}}
+           className=" text-center flex flex-row sm:flex-col sm:text-lg justify-center gap-3 m-5 my-4">
             NO MUGGLES ALLOWED
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +49,7 @@ const NotFound = () => {
           <hr className=" w-1/2 mx-auto " />
           <Link
             href={"/"}
-            className=" animate-bounce mx-auto border rounded-full border-gray-800 w-1/2 items-center p-4 m-5 hover:bg-black text-4xl sm:text-2xl sm:text-start md:text-3xl"
+            className=" animate-bounce mx-auto border-2 rounded-full border-gray-800 w-1/2 sm:w-full items-center p-4 m-5 hover:bg-black text-4xl sm:text-2xl sm:text-start md:text-3xl"
           >
             
             Be Gone

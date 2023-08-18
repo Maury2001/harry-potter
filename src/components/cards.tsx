@@ -142,44 +142,45 @@ const Card = () => {
               // style={{ backgroundImage: `url(${character.image})` }}
             >
               <ul className=" text-xl text-black font-light">
-                <li>actor:{character.actor ? character.actor : "unknown"}</li>
+                <li>actor:<span className=" text-white font-medium">{character.actor ? character.actor : "unknown"}</span></li>
                 <li>
-                  alternate_name:
+                  alternate_name:<span className=" text-white font-medium">
                   {character.alternate_names
                     ? character.alternate_names
-                    : "unknown"}
+                    : "unknown"}</span>
                 </li>
                 <li>
-                  species:{character.species ? character.species : "unknown"}
+                  species:<span className=" text-white font-medium">
+                    {character.species ? character.species : "unknown"}</span>
                 </li>
                 <li>
-                  gender:{character.gender ? character.gender : "unknown"}
+                  gender:<span className=" text-white font-medium">{character.gender ? character.gender : "unknown"}</span>
                 </li>
-                <li>house:{character.house ? character.house : "unknown"}</li>
+                <li>house:<span className=" text-white font-medium">{character.house ? character.house : "unknown"}</span></li>
                 <li>
-                  birthDay:
+                  birthDay:<span className=" text-white font-medium">
                   {character.dateOfBirth ? character.dateOfBirth : "unknown"}:{" "}
-                  {character.yearOfBirth ? character.yearOfBirth : "unknown"}
+                  {character.yearOfBirth ? character.yearOfBirth : "unknown"}</span>
                 </li>
                 <li>
-                  wizard:{character.wizard ? character.wizard : "unknown"}
+                  wizard:<span className=" text-white font-medium">{character.wizard ? character.wizard : "unknown"}</span>
                 </li>
                 <li>
-                  ancestry:{character.ancestry ? character.ancestry : "unknown"}
+                  ancestry:<span className=" text-white font-medium">{character.ancestry ? character.ancestry : "unknown"}</span>
                 </li>
 
                 <li>
-                  patronous:
-                  {character.patronous ? character.patronous : "unknown"}
+                  patronous:<span className=" text-white font-medium">
+                  {character.patronous ? character.patronous : "unknown"}</span>
                 </li>
                 <li>
-                  eyeColor:{character.eyeColor ? character.eyeColor : "unknown"}
+                  eyeColor:<span className=" text-white font-medium">{character.eyeColor ? character.eyeColor : "unknown"} </span>
                 </li>
                 <li>
-                  hairColor:
-                  {character.hairColor ? character.hairColor : "unknown"}
+                  hairColor:<span className=" text-white font-medium">
+                  {character.hairColor ? character.hairColor : "unknown"}</span>
                 </li>
-                <li>{character.alive ? character.alive : "unknown"}</li>
+                <li><span className=" text-white font-medium">{character.alive ? character.alive : "unknown"}</span></li>
               </ul>
             </motion.div>
           )}

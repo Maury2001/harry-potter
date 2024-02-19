@@ -42,12 +42,14 @@ export default function Home() {
     </Head>
     <section className="w-full h-screen items-center justify-center bg-fixed bg-center bg-cover custom-img sm:mobile-img overflow-auto" >
 
+      <NavBar/>
+    
+   <main className=" m-4">
+   <Card   />
+   </main>
      
-     <NavBar/>
-     <Search
-     />
      
-      <Card   />
+     
   
 
       
